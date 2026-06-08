@@ -1,0 +1,73 @@
+/* ============================
+   SUSTAINABLE SECTION
+============================ */
+.sustainable {
+  background: var(--color-bg);
+  padding: 120px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sustainable::before {
+  content: 'SUSTAINABLE';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-en);
+  font-size: clamp(60px, 10vw, 160px);
+  font-weight: 800;
+  color: rgba(0,0,0,0.03);
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+}
+
+.sustainable-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.sustainable-wrap .sectit {
+  font-family: var(--font-en);
+  font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.sustainable-wrap .seccnt {
+  max-width: 480px;
+}
+
+.sustainable-wrap .tit {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+
+.sustainable-wrap .dec {
+  font-size: 15px;
+  color: var(--color-gray);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+  .sustainable-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sustainable { padding: 80px 24px; }
+}
