@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/videos" element={<Navigate to="/videos/ai-translation" replace />} />
+          <Route path="/videos" element={<Navigate to="/videos/translation" replace />} />
           <Route path="/videos/:category" element={<VideosPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

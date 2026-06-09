@@ -22,8 +22,10 @@ export default function Footer() {
           <div className="footer-col">
             <h4>동영상</h4>
             <ul>
-              <li><Link to="/videos/ai-translation">AI 영어 통번역</Link></li>
-              <li><Link to="/videos/ai-literacy">미국 AI 리터러시</Link></li>
+              <li><Link to="/videos/translation">영어 통번역</Link></li>
+              <li><Link to="/videos/conference">회의 통역</Link></li>
+              <li><Link to="/videos/mice">MICE 영어 통역</Link></li>
+              <li><Link to="/videos/web">영어 웹사이트 개발</Link></li>
             </ul>
           </div>
           <div className="footer-col">

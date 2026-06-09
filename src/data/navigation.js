@@ -21,8 +21,10 @@ export const navItems = [
     label: '동영상',
     href: '/videos',
     children: [
-      { label: 'AI 영어 통번역', href: '/videos/ai-translation' },
-      { label: '미국 AI 리터러시', href: '/videos/ai-literacy' },
+      { label: '영어 통번역', href: '/videos/translation' },
+      { label: '회의 통역', href: '/videos/conference' },
+      { label: 'MICE 영어 통역', href: '/videos/mice' },
+      { label: '영어 웹사이트 개발', href: '/videos/web' },
     ],
   },
   {
