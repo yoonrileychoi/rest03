@@ -14,4 +14,9 @@ export const navItems = [
       { label: '영어 웹페이지 제작', href: '/videos/web' },
     ],
   },
+  {
+    label: '문의하기',
+    href: '/contact',
+    children: [],
+  },
 ]
