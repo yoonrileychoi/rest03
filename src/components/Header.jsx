@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { navItems } from '../data/navigation'
 import { useTheme, palette } from '../context/ThemeContext'
@@ -11,6 +11,28 @@ export default function Header() {
   const { theme, toggleTheme, accent, setAccent } = useTheme()
   const navigate = useNavigate()
   const location = useLocation()
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
+  const searchInputRef = useRef(null)
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus()
+  }, [searchOpen])
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault()
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery.trim())}`)
+      setSearchOpen(false)
+      setSearchQuery('')
+    }
+  }
+
+  useEffect(() => {
+    const handleKey = (e) => { if (e.key === 'Escape') setSearchOpen(false) }
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [])
 
   const handleNavHover = useCallback((index) => setActiveMenu(index), [])
   const handleNavLeave = useCallback(() => setActiveMenu(null), [])
@@ -70,7 +92,26 @@ export default function Header() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
               )}
             </button>
-            <Link to="/contact" className="header-cta">문의하기</Link>
+            <div className={`header-search${searchOpen ? ' open' : ''}`}>
+              <button className="theme-btn search-btn" onClick={() => setSearchOpen(v => !v)} aria-label="검색">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </button>
+              {searchOpen && (
+                <form className="search-form" onSubmit={handleSearchSubmit}>
+                  <input
+                    ref={searchInputRef}
+                    className="search-input"
+                    type="text"
+                    placeholder="검색어를 입력하세요..."
+                    value={searchQuery}
+                    onChange={e => setSearchQuery(e.target.value)}
+                  />
+                  <button type="submit" className="search-submit" aria-label="검색">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  </button>
+                </form>
+              )}
+            </div>
           </div>
         </div>
       </nav>
