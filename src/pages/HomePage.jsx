@@ -1,27 +1,21 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import MainPopup from '../components/MainPopup'
-import MainIntro from '../sections/MainIntro'
-import Founding from '../sections/Founding'
-import BusinessSection from '../sections/BusinessSection'
-import Sustainable from '../sections/Sustainable'
-import Discover from '../sections/Discover'
-import Relation from '../sections/Relation'
+import HeroSection from '../sections/HeroSection'
+import ServicesSection from '../sections/ServicesSection'
+import PaletteSection from '../sections/PaletteSection'
+import CTASection from '../sections/CTASection'
 
 export default function HomePage() {
   return (
     <div className="all-wrap">
-      <Header isDark={true} />
+      <Header />
       <main>
-        <MainIntro />
-        <Founding />
-        <BusinessSection />
-        <Sustainable />
-        <Discover />
-        <Relation />
+        <HeroSection />
+        <ServicesSection />
+        <PaletteSection />
+        <CTASection />
       </main>
       <Footer />
-      <MainPopup />
     </div>
   )
 }

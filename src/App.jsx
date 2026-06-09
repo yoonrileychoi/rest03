@@ -1,19 +1,21 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext'
 import HomePage from './pages/HomePage'
-import HousingPage from './pages/business/HousingPage'
+import VideosPage from './pages/VideosPage'
+import ContactPage from './pages/ContactPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/business/housing" element={<HousingPage />} />
-        <Route path="/business/building" element={<HousingPage />} />
-        <Route path="/business/civil" element={<HousingPage />} />
-        <Route path="/business/plant" element={<HousingPage />} />
-        <Route path="/business/global" element={<HousingPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/videos" element={<Navigate to="/videos/ai-translation" replace />} />
+          <Route path="/videos/:category" element={<VideosPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
