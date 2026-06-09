@@ -48,14 +48,14 @@ nav.mo { display: none; }
   padding: 8px 18px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-sub);
-  border-radius: 8px;
+  color: var(--text);
+  border-bottom: 2px solid transparent;
   transition: all var(--transition);
 }
 .nav-list > li:hover > a,
 .nav-list > li.active > a {
   color: var(--point);
-  background: var(--bg-soft);
+  border-bottom-color: var(--point);
 }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }

@@ -3,27 +3,28 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 :root {
-  /* 5-color palette */
+  /* palette references */
   --palette-blue: #89C4E1;
   --palette-pink: #F4A7B9;
   --palette-navy: #1D3557;
   --palette-mint: #A8D8C8;
-  --palette-ivory: #FDF6F0;
+  --palette-red: #E60012;
+  --palette-slate: #1C1C2E;
 
-  /* Light mode tokens */
+  /* Light mode tokens — clean neutral (Lotte Chemical style) */
   --bg: #FFFFFF;
-  --bg-soft: #FDF8FC;
-  --bg-card: #F8F2F6;
+  --bg-soft: #F5F6F7;
+  --bg-card: #F0F2F5;
   --surface: #FFFFFF;
-  --text: #1D3557;
-  --text-sub: #4A6080;
-  --text-muted: #8A9BAC;
-  --border: #E5D5E8;
+  --text: #1A1A2E;
+  --text-sub: #4A5568;
+  --text-muted: #8896A5;
+  --border: #DDE1E7;
   --accent: #89C4E1;
   --accent2: #F4A7B9;
   --point: #1D3557;
   --mint: #A8D8C8;
-  --shadow: rgba(29, 53, 87, 0.08);
+  --shadow: rgba(0, 0, 0, 0.08);
 
   --font-kr: 'Pretendard', -apple-system, sans-serif;
   --font-en: 'Google Sans', 'Pretendard', -apple-system, sans-serif;

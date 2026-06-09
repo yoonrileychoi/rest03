@@ -19,11 +19,7 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
-      <div className="hero-bg">
-        <div className="hero-blob blob1" />
-        <div className="hero-blob blob2" />
-        <div className="hero-blob blob3" />
-      </div>
+      <div className="hero-accent-panel" aria-hidden="true" />
       <div className="container hero-inner" ref={textRef}>
         <h1 className="hero-title">
           <span className="title-line1">영어 전문</span>
