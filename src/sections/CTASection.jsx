@@ -12,7 +12,6 @@ export default function CTASection() {
         </div>
         <div className="cta-actions">
           <Link to="/contact" className="btn-primary">무료 상담 신청</Link>
-          <Link to="/videos/translation" className="btn-outline">동영상 보기</Link>
         </div>
       </div>
     </section>
