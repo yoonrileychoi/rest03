@@ -80,9 +80,9 @@ nav.mo { display: none; }
 .palette-dot:focus { outline: none; }
 .palette-dot:hover { transform: scale(1.25); }
 .palette-dot.active {
-  border-color: var(--text);
-  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--text);
-  transform: scale(1.1);
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 3px rgba(255,255,255,0.6);
+  transform: scale(1.15);
 }
 .palette-dots-mo { padding: 4px 8px; gap: 5px; }
 .palette-dots-mo .palette-dot { width: 14px; height: 14px; }

@@ -14,15 +14,15 @@ export default function ContactPage() {
             <p>영어 번역, 통역, 웹사이트 제작에 대해 궁금한 점을 남겨주세요.<br />빠른 시간 내에 답변 드리겠습니다.</p>
             <div className="contact-info">
               <div className="info-item">
-                <span className="info-icon">📧</span>
+                <span className="info-icon"><i className="fa-regular fa-envelope" /></span>
                 <div><strong>이메일</strong><span>contact@linguapro.kr</span></div>
               </div>
               <div className="info-item">
-                <span className="info-icon">📞</span>
+                <span className="info-icon"><i className="fa-solid fa-phone" /></span>
                 <div><strong>전화</strong><span>010-0000-0000</span></div>
               </div>
               <div className="info-item">
-                <span className="info-icon">⏰</span>
+                <span className="info-icon"><i className="fa-regular fa-clock" /></span>
                 <div><strong>운영시간</strong><span>평일 09:00 - 18:00</span></div>
               </div>
             </div>
