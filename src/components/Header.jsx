@@ -32,8 +32,7 @@ export default function Header() {
       <nav className="pc" onMouseLeave={handleNavLeave}>
         <div className="nav-bar container">
           <Link to="/" className="logo">
-            <span className="logo-main">LINGUA PRO</span>
-            <span className="logo-sub">English · Translation · Web</span>
+            <span className="logo-main">TRANS PRO</span>            <span className="logo-sub">Interpretation · Translation · Web</span>
           </Link>
           <ul className="nav-list">
             {navItems.map((item, i) => (
@@ -85,8 +84,7 @@ export default function Header() {
       <nav className="mo">
         <div className="nav-bar container">
           <Link to="/" className="logo">
-            <span className="logo-main">LINGUA PRO</span>
-          </Link>
+            <span className="logo-main">TRANS PRO</span>          </Link>
           <div className="mo-actions">
             <div className="palette-dots palette-dots-mo">
               {palette.map(color => (
@@ -143,7 +141,7 @@ export default function Header() {
             </dl>
           ))}
           <div className="mo-footer">
-            <p>© 2026 LINGUA PRO. All rights reserved.</p>
+            <p>© 2026 TRANS PRO. All rights reserved.</p>
           </div>
         </div>
       </nav>

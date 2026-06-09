@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-brand">
-          <div className="footer-logo">LINGUA PRO</div>
+          <div className="footer-logo">TRANS PRO</div>
           <p className="footer-tagline">영어 전문 통번역 · 영어 웹페이지 제작</p>
-          <p className="footer-copy">© 2026 LINGUA PRO. All rights reserved.</p>
+          <p className="footer-copy">© 2026 TRANS PRO. All rights reserved.</p>
         </div>
         <div className="footer-links">
           <div className="footer-col">
