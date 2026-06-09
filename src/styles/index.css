@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 :root {
   /* 5-color palette */
@@ -23,9 +23,9 @@
   --mint: #A8D8C8;
   --shadow: rgba(29, 53, 87, 0.08);
 
-  --font-kr: 'Noto Sans KR', -apple-system, sans-serif;
-  --font-en: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-kr: 'Pretendard', -apple-system, sans-serif;
+  --font-en: 'Pretendard', -apple-system, sans-serif;
+  --font-display: 'Pretendard', -apple-system, sans-serif;
   --header-h: 80px;
   --transition: 0.3s ease;
   --radius: 12px;
