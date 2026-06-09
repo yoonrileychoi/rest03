@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TRANS PRO</title>
+    <script>
+      // GitHub Pages SPA fallback: 어떤 딥링크로 들어와도 해시 라우터 진입점으로 보냄
+      var seg = location.pathname.split('/').filter(Boolean);
+      var base = seg.length ? '/' + seg[0] + '/' : '/';
+      location.replace(base + '#/' );
+    </script>
+  </head>
+  <body></body>
+</html>
