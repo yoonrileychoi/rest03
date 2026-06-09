@@ -1,28 +1,32 @@
 export const videoCategories = [
-  { id: 'translation', label: '영어 통번역', labelEn: 'Translation' },
-  { id: 'conference', label: '회의 통역', labelEn: 'Conference Interpretation' },
-  { id: 'mice', label: 'MICE 영어 통역', labelEn: 'MICE Interpretation' },
-  { id: 'web', label: '영어 웹사이트 개발', labelEn: 'Web Development' },
+  { id: 'interpretation', label: '영어 통역', labelEn: 'Interpretation' },
+  { id: 'translation', label: '영어 번역', labelEn: 'Translation' },
+  { id: 'liaison', label: '리에종', labelEn: 'Liaison' },
+  { id: 'web', label: '영어 웹페이지 제작', labelEn: 'Web Development' },
 ]
 
 export const videos = {
-  'translation': [
+  'interpretation': [
     { id: 'aH8B4fnhNnA', title: '통번역대학원 졸업 통역사의 영어공부법', desc: '자료 추천 | 교재 추천 | 영어 입풀기 — 현직 전문 통역사가 직접 알려주는 영어 학습 방법' },
-    { id: '5LAkrhqSA5E', title: '통번역사는 어떤 책으로 공부할까?', desc: '통대생 필독 도서 + 영어 공부 추천 도서 총정리' },
     { id: 'WH0qrb9YXlc', title: '국제회의 통역사들이 알려주는 영어 공부 TIP', desc: 'N플릭스와 일하는 통역사들의 영어 공부법은 뭐가 다를까? (유퀴즈 온더블럭)' },
     { id: 'sv_uQkL9aE4', title: '32년 경력 베테랑 통역사의 영어 비결', desc: '"절실함이었어요" — 베테랑 통역사가 전하는 영어 실력 향상의 핵심' },
     { id: 'UhZfrqZKidw', title: '국내파인데 해외파보다 영어 잘하는 비결', desc: '통역 꿀팁 대공개! Secrets to Mastering English? Interpreting Tips!' },
-    { id: 'PRk5p4YLRVk', title: 'AI가 실시간 강의 번역! (KBC뉴스)', desc: '유학생도 걱정없다 — AI 실시간 강의 번역 기술 최신 동향' },
-  ],
-  'conference': [
     { id: 'dvsBObYcHvI', title: '이제 화상회의 통역이 필요없을 듯 합니다', desc: 'AI 기술의 발전으로 달라지는 화상회의 통역 환경' },
     { id: 'Ef8K7TLNYRc', title: '국제회의 통역사가 알려주는 리얼 영어 ep.1', desc: '국제회의 현장에서 실제로 쓰이는 영어 표현 심층 분석' },
+  ],
+  'translation': [
+    { id: '5LAkrhqSA5E', title: '통번역사는 어떤 책으로 공부할까?', desc: '통대생 필독 도서 + 영어 공부 추천 도서 총정리' },
+    { id: 'PRk5p4YLRVk', title: 'AI가 실시간 강의 번역! (KBC뉴스)', desc: '유학생도 걱정없다 — AI 실시간 강의 번역 기술 최신 동향' },
     { id: 'bzi7N7_tSk4', title: 'AI가 통화 중 실시간 통역 (뉴스A)', desc: '영어 못해도 괜찮아 — AI가 통화 중 실시간으로 통역해주는 시대' },
     { id: 'o9iNcOvoZjs', title: '컨퍼런스 콜·화상회의 필수 영어 표현', desc: '아직도 화상회의 영어가 어려우신가요? 핵심 표현만 모았습니다' },
+    { id: '3WyM__H-PHs', title: '이제 영어 못해도 AI가 번역해줍니다 — OpenAI Whisper', desc: 'AI 자동 번역의 최전선, OpenAI Whisper로 달라지는 영어 번역 현장' },
+    { id: 'h2UEdJeOArc', title: '음성 번역은 물론 입모양까지 바꿔주는 HeyGen AI', desc: '영상 올리면 원클릭으로 다양한 언어로 번역 — HeyGen Translation AI 실사용 후기' },
   ],
-  'mice': [
+  'liaison': [
     { id: 'VR-mhb206Ms', title: 'MICE, 관광산업 발전의 키워드', desc: 'MICE 산업이 국가 이미지와 경제 효과에 미치는 영향 — 한국MICE협회' },
     { id: 'b6c00LW6arE', title: '스마트폰으로 쉽게 외국어 통역하는 방법', desc: 'MICE 행사 현장에서 바로 쓸 수 있는 스마트폰 실시간 통역 완전 정복' },
+    { id: 'jf-9fx25f_0', title: '오프라인 행사 동시통역 중계 샘플영상', desc: '실제 오프라인 행사에서 진행되는 전문 동시통역 현장 중계 샘플' },
+    { id: 'qaBBVSU4usY', title: '실시간 통역·번역 소오름 돋는 구글 번역기', desc: '현장에서 바로 쓰는 실시간 AI 통역 — 리에종 현장 활용 가이드' },
   ],
   'web': [
     { id: '4mRae9N2pU4', title: '웹사이트 7분만에 개발하고 실전 배포하기', desc: '웹개발 이렇게 쉬웠나? 빠른 개발부터 실전 배포까지 한번에' },

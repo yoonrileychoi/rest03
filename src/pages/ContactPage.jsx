@@ -11,11 +11,11 @@ export default function ContactPage() {
           <div className="contact-text">
             <span className="section-label">Contact Us</span>
             <h1>문의하기</h1>
-            <p>영어 번역, 통역, 웹사이트 제작에 대해 궁금한 점을 남겨주세요.<br />빠른 시간 내에 답변 드리겠습니다.</p>
+            <p>영어 통번역, 리에종, 영문 웹사이트 제작에 대해 궁금한 점을 남겨주세요.<br />빠른 시간 내에 답변 드리겠습니다.</p>
             <div className="contact-info">
               <div className="info-item">
                 <span className="info-icon"><i className="fa-regular fa-envelope" /></span>
-                <div><strong>이메일</strong><span>contact@linguapro.kr</span></div>
+                <div><strong>이메일</strong><span>yoonjoungchoi@transpro.kr</span></div>
               </div>
               <div className="info-item">
                 <span className="info-icon"><i className="fa-solid fa-phone" /></span>
@@ -42,8 +42,9 @@ export default function ContactPage() {
               <label>서비스 종류</label>
               <select>
                 <option value="">선택해주세요</option>
-                <option>영어 전문 통번역</option>
-                <option>AI 활용 번역</option>
+                <option>영어 통역</option>
+                <option>영어 번역</option>
+                <option>리에종</option>
                 <option>영어 웹페이지 제작</option>
                 <option>기타</option>
               </select>

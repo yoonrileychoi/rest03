@@ -3,6 +3,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import HomePage from './pages/HomePage'
 import VideosPage from './pages/VideosPage'
 import ContactPage from './pages/ContactPage'
+import AboutPage from './pages/AboutPage'
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/videos" element={<Navigate to="/videos/translation" replace />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/videos" element={<Navigate to="/videos/interpretation" replace />} />
           <Route path="/videos/:category" element={<VideosPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />

@@ -8,7 +8,7 @@ import '../styles/VideosPage.css'
 const VIDEOS_PER_PAGE = 6
 
 export default function VideosPage() {
-  const { category = 'ai-translation' } = useParams()
+  const { category = 'interpretation' } = useParams()
   const [page, setPage] = useState(1)
 
   const activeCategory = videoCategories.find(c => c.id === category) || videoCategories[0]
@@ -24,9 +24,9 @@ export default function VideosPage() {
       <main className="videos-main">
         <div className="videos-hero">
           <div className="container">
-            <span className="section-label">Video Library</span>
-            <h1>동영상 라이브러리</h1>
-            <p>AI 번역과 미국 AI 리터러시 관련 영상 모음</p>
+            <span className="section-label">Services</span>
+            <h1>서비스 소개</h1>
+            <p>Trans Pro가 제공하는 영어 통번역, 리에종 및 영문 웹페이지 제작 서비스</p>
           </div>
         </div>
 

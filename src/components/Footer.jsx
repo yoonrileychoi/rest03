@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import '../styles/Footer.css'
 
 export default function Footer() {
@@ -7,27 +6,8 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <div className="footer-logo">TRANS PRO</div>
-          <p className="footer-tagline">영어 전문 통번역 · 영어 웹페이지 제작</p>
+          <p className="footer-tagline">영어 전문 통번역 · 리에종 · 영문 웹페이지 제작</p>
           <p className="footer-copy">© 2026 TRANS PRO. All rights reserved.</p>
-        </div>
-        <div className="footer-links">
-          <div className="footer-col">
-            <h4>동영상</h4>
-            <ul>
-              <li><Link to="/videos/translation">영어 통번역</Link></li>
-              <li><Link to="/videos/conference">회의 통역</Link></li>
-              <li><Link to="/videos/mice">MICE 영어 통역</Link></li>
-              <li><Link to="/videos/web">영어 웹사이트 개발</Link></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4>바로가기</h4>
-            <ul>
-              <li><Link to="/">홈</Link></li>
-              <li><Link to="/videos/translation">동영상</Link></li>
-              <li><Link to="/contact">문의하기</Link></li>
-            </ul>
-          </div>
         </div>
       </div>
     </footer>

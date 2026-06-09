@@ -1,12 +1,17 @@
 export const navItems = [
   {
-    label: '동영상',
-    href: '/videos/translation',
+    label: '회사 소개',
+    href: '/about',
+    children: [],
+  },
+  {
+    label: '서비스 소개',
+    href: '/videos/interpretation',
     children: [
-      { label: '영어 통번역', href: '/videos/translation' },
-      { label: '회의 통역', href: '/videos/conference' },
-      { label: 'MICE 영어 통역', href: '/videos/mice' },
-      { label: '영어 웹사이트 개발', href: '/videos/web' },
+      { label: '영어 통역', href: '/videos/interpretation' },
+      { label: '영어 번역', href: '/videos/translation' },
+      { label: '리에종', href: '/videos/liaison' },
+      { label: '영어 웹페이지 제작', href: '/videos/web' },
     ],
   },
   {
