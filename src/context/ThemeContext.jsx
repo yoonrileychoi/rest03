@@ -3,11 +3,12 @@ import { createContext, useContext, useEffect, useState } from 'react'
 const ThemeContext = createContext()
 
 export const palette = [
-  { name: 'Baby Blue',  hex: '#89C4E1' },
-  { name: 'Baby Pink',  hex: '#F4A7B9' },
-  { name: 'Deep Navy',  hex: '#1D3557' },
-  { name: 'Soft Mint',  hex: '#A8D8C8' },
-  { name: 'Warm Ivory', hex: '#FDF6F0' },
+  { name: 'Baby Blue',    hex: '#89C4E1' },
+  { name: 'Baby Pink',    hex: '#F4A7B9' },
+  { name: 'Deep Navy',    hex: '#1D3557' },
+  { name: 'Soft Mint',    hex: '#A8D8C8' },
+  { name: 'Corporate Red', hex: '#E60012' },
+  { name: 'Dark Slate',   hex: '#1C1C2E' },
 ]
 
 export function ThemeProvider({ children }) {
