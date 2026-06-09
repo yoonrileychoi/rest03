@@ -54,9 +54,9 @@
   border-radius: var(--radius) var(--radius) 0 0;
   transition: height var(--transition);
 }
-.color-blue::before { background: var(--palette-blue); }
-.color-pink::before { background: var(--palette-pink); }
-.color-mint::before { background: var(--palette-mint); }
+.color-blue::before { background: #1A6FA4; }
+.color-pink::before { background: #C0392B; }
+.color-mint::before { background: #1A8A6E; }
 
 .service-card:hover {
   transform: translateY(-6px);
