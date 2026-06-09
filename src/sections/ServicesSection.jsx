@@ -7,7 +7,7 @@ const services = [
     title: '영어 전문 통번역',
     titleEn: 'Professional Translation',
     desc: '법률, 의료, 비즈니스, 학술 등 다양한 분야의 전문 영어 통번역 서비스를 제공합니다.',
-    href: '/services/translation',
+    href: '/contact',
     color: 'blue',
   },
   {
@@ -15,7 +15,7 @@ const services = [
     title: 'AI 활용 번역',
     titleEn: 'AI-Powered Translation',
     desc: 'ChatGPT, DeepL 등 최신 AI 기술을 활용하여 빠르고 정확한 번역을 제공합니다.',
-    href: '/services/ai-translation',
+    href: '/contact',
     color: 'pink',
   },
   {
@@ -23,7 +23,7 @@ const services = [
     title: '영어 웹페이지 제작',
     titleEn: 'English Web Development',
     desc: '글로벌 감각의 영어 웹사이트를 기획부터 제작까지 원스톱으로 제공합니다.',
-    href: '/services/web',
+    href: '/contact',
     color: 'mint',
   },
 ]

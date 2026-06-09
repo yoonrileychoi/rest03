@@ -36,8 +36,8 @@ export default function HeroSection() {
           정확하고 자연스러운 영어 번역, 글로벌 감각의 웹사이트를 제공합니다.
         </p>
         <div className="hero-actions">
-          <Link to="/services" className="btn-primary">서비스 보기</Link>
-          <Link to="/videos" className="btn-outline">동영상 보기</Link>
+          <Link to="/contact" className="btn-primary">문의하기</Link>
+          <Link to="/videos/translation" className="btn-outline">동영상 보기</Link>
         </div>
         <div className="hero-stats">
           <div className="stat"><strong>500+</strong><span>번역 프로젝트</span></div>
