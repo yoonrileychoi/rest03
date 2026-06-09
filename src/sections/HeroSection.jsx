@@ -19,7 +19,6 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
-      <div className="hero-accent-panel" aria-hidden="true" />
       <div className="container hero-inner" ref={textRef}>
         <h1 className="hero-title">
           <span className="title-line1">영어 전문</span>
@@ -41,10 +40,6 @@ export default function HeroSection() {
           <div className="stat-divider" />
           <div className="stat"><strong>98%</strong><span>고객 만족도</span></div>
         </div>
-      </div>
-      <div className="hero-scroll-hint">
-        <span>Scroll</span>
-        <div className="scroll-line" />
       </div>
     </section>
   )

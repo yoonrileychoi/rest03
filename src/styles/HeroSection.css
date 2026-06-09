@@ -5,20 +5,8 @@
   align-items: center;
   padding-top: var(--header-h);
   overflow: hidden;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-}
-
-/* Right-side subtle panel — clean split like corporate sites */
-.hero-accent-panel {
-  position: absolute;
-  top: 0; right: 0;
-  width: 42%;
-  height: 100%;
   background: var(--bg-soft);
-  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
-  pointer-events: none;
-  z-index: 0;
+  border-bottom: 1px solid var(--border);
 }
 
 .hero-inner {
@@ -26,22 +14,23 @@
   z-index: 1;
   padding-top: 80px;
   padding-bottom: 80px;
+  max-width: 640px;
 }
 
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--bg-card);
+  background: transparent;
   border: 1px solid var(--border);
-  color: var(--point);
+  color: var(--text-muted);
   font-family: var(--font-en);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 50px;
+  padding: 5px 14px;
+  border-radius: 4px;
   margin-bottom: 28px;
 }
 
@@ -54,7 +43,7 @@
   font-family: var(--font-kr);
   font-size: clamp(36px, 5vw, 72px);
   font-weight: 700;
-  color: var(--accent);
+  color: var(--point);
   line-height: 1.2;
 }
 .title-line2 {
@@ -113,35 +102,6 @@
   background: var(--border);
 }
 
-.hero-scroll-hint {
-  position: absolute;
-  bottom: 40px;
-  right: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-.hero-scroll-hint span {
-  font-family: var(--font-en);
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-  writing-mode: vertical-rl;
-}
-.scroll-line {
-  width: 1px;
-  height: 60px;
-  background: linear-gradient(to bottom, var(--text-muted), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
-}
-@keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 1; }
-}
-
 @media (max-width: 768px) {
-  .hero-accent-panel { display: none; }
   .hero-stats { gap: 20px; }
-  .hero-scroll-hint { display: none; }
 }

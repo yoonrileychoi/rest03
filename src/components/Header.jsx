@@ -38,6 +38,15 @@ export default function Header() {
             {navItems.map((item, i) => (
               <li key={i} className={activeMenu === i ? 'active' : ''} onMouseEnter={() => handleNavHover(i)}>
                 <Link to={item.href || '#'}>{item.label}</Link>
+                {item.children.length > 0 && (
+                  <ul className={`nav-dropdown-menu${activeMenu === i ? ' open' : ''}`}>
+                    {item.children.map((child, j) => (
+                      <li key={j}>
+                        <Link to={child.href} onClick={handleNavLeave}>{child.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
@@ -62,20 +71,6 @@ export default function Header() {
               )}
             </button>
             <Link to="/contact" className="header-cta">문의하기</Link>
-          </div>
-        </div>
-        {/* Dropdown */}
-        <div className={`nav-dropdown${activeMenu !== null && navItems[activeMenu]?.children?.length > 0 ? ' open' : ''}`}>
-          <div className="container">
-            {navItems.map((item, i) => (
-              <ul key={i} className={`dropdown-col${activeMenu === i ? ' active' : ''}`}>
-                {item.children.map((child, j) => (
-                  <li key={j}>
-                    <Link to={child.href} onClick={handleNavLeave}>{child.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            ))}
           </div>
         </div>
       </nav>
