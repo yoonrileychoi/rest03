@@ -56,7 +56,9 @@
 }
 .history-item:last-child { border-bottom: none; }
 .history-year { font-family: var(--font-en); font-size: 15px; font-weight: 700; color: var(--accent); }
-.history-desc { font-size: 14px; color: var(--text-sub); line-height: 1.6; }
+.history-desc-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.history-desc { font-size: 14px; color: var(--text-sub); line-height: 1.6; padding-left: 12px; position: relative; }
+.history-desc::before { content: '·'; position: absolute; left: 0; color: var(--accent); }
 
 @media (max-width: 900px) {
   .about-intro { grid-template-columns: 1fr; gap: 40px; }
