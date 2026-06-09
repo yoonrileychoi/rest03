@@ -7,7 +7,7 @@ import ContactPage from './pages/ContactPage'
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/rest03">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/videos" element={<Navigate to="/videos/translation" replace />} />
