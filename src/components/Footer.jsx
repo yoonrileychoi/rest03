@@ -12,14 +12,6 @@ export default function Footer() {
         </div>
         <div className="footer-links">
           <div className="footer-col">
-            <h4>서비스</h4>
-            <ul>
-              <li><Link to="/services/translation">영어 전문 통번역</Link></li>
-              <li><Link to="/services/ai-translation">AI 활용 번역</Link></li>
-              <li><Link to="/services/web">영어 웹페이지 제작</Link></li>
-            </ul>
-          </div>
-          <div className="footer-col">
             <h4>동영상</h4>
             <ul>
               <li><Link to="/videos/translation">영어 통번역</Link></li>
@@ -29,10 +21,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h4>회사</h4>
+            <h4>바로가기</h4>
             <ul>
-              <li><Link to="/about/greeting">CEO 인사말</Link></li>
-              <li><Link to="/about/vision">회사 비전</Link></li>
+              <li><Link to="/">홈</Link></li>
+              <li><Link to="/videos/translation">동영상</Link></li>
               <li><Link to="/contact">문의하기</Link></li>
             </ul>
           </div>
