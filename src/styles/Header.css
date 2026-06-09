@@ -60,6 +60,31 @@ nav.mo { display: none; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
 
+.palette-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--bg-card);
+  border-radius: 50px;
+  border: 1px solid var(--border);
+}
+.palette-dot {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  flex-shrink: 0;
+}
+.palette-dot:hover { transform: scale(1.25); }
+.palette-dot.active {
+  border-color: var(--text);
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--text);
+  transform: scale(1.1);
+}
+.palette-dots-mo { padding: 4px 8px; gap: 5px; }
+.palette-dots-mo .palette-dot { width: 14px; height: 14px; }
+
 .theme-btn {
   width: 40px; height: 40px;
   border-radius: 50%;
